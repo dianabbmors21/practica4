@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jqery/jquery.mobile-1.4.5.min.css">
+    <script src="jqery/jquery-1.11.3.min.js"></script>
+    <script src="jqery/jquery.mobile-1.4.5.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div data-role="page" id="page1" data-url="page1" tabindex="0" class="ui-page ui-page-theme-a" style="min-height: 742px;">
+
+
+        <div style="background-color: yellow" data-role="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
+            <a href="#page1" class="ui-btn-left ui-btn ui-icon-home ui-btn-icon-left" data-role="button" role="button">Home</a>
+            <h1 class="ui-title" role="heading" aria-level="1">BIENVENIDO A MI VITAE Digital</h1>
+            <a href="#" class="ui-btn-right ui-btn ui-icon-search ui-btn-icon-left" data-role="button" role="button">Search</a>
+            <div data-role="navbar" class="ui-navbar" role="navigation" style="background-color: red">
+                <ul class="ui-grid-d">
+                    <li class="ui-block-a"><a href="#Page1" style="background-color: pink" class="ui-link ui-btn">DATOS GENERALES</a></li>
+                    <li class="ui-block-b"><a href="#Page2" style="background-color: pink" class="ui-link ui-btn">ESTUDIOS</a></li>
+                    <li class="ui-block-c"><a href="#Page3" style="background-color: pink" class="ui-link ui-btn">HABILIDADES EXTRAS</a></li>
+                    <li class="ui-block-d"><a href="#Page4" style="background-color: pink" class="ui-link ui-btn">PASATIEMPOS</a></li>
+                    <li class="ui-block-e"><a href="#Page5" style="background-color: pink" class="ui-link ui-btn">EXPERIENCIA LABORAL</a></li>
+                </ul>
+            </div>
+            <div data-role="panel" id="myPanel" data-position="fixed"> 
+                <h2>Bienvenido</h2>
+              </div> 
+        </div>
+        <!-- Main -->
+        <div data-role="main" class="ui-content" style="text-align:center;" >
+            <center>
+              <img src="img/dm.jpeg" width="200" height="300">
+            </center>
+          <p align="center">
+              <b>Nombre:</b> DIANA MARCELA ORTEGA IGLESIAS<br>
+              <b>FECHA DE NACIMIENTO:</b> 21/05/21
+              <br><b>EDAD:</b> 20
+              <br>
+          </p>
+          <div style="text-align:center">
+              <p></p>
+              <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all" aria-haspopup="true" aria-owns="myPopup" aria-expanded="false"> Popup</a> </div>
+    
+          <div style="display: none;" id="myPopup-placeholder">
+              <!-- placeholder for myPopup -->
+          </div>
+            <br>
+          <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Mostrar informacion</a> 
+            
+            <div style='text-align:center'></p>
+            <a href="#" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all" ></a></div>
+    
+          <div data-role="popup" id="myPopup"  class="ui-content">
+         <a href="#" data-rel="back" class="ui-btn-inline ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+        <p>Prueba el botón de cerrar en la esquina superior derecha.</p>
+        <p><b>Tip:</b> También puedes dar un clic en   afuera del Popup para cerrar.</p>
+              </div>
+            </div>
+        <!-- footer -->
+        <div data-role="footer">
+            <h2 class="ui-title" role="heading" aria-level="1">
+                <font color="BLUE">Creado por DMOI</font>
+            </h2>
+        </div>
+
+    </div>
+    <!-- //////////////////////////////////////// -->
+    <!-- Page2 -->
+    <div data-role="page" id="Page2" data-url="Page2">
+   <!-- Label -->
+        <!--Header-->
+    <div data-role="header" data-theme="b">
+
+        <a href="#page1" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+        <h1>Estudios</h1>
+        <a href="#" class="ui-btn ui-icon-search ui-btn-icon-left">Search</a>
+    </div>
+
+         <!--navegador -->
+     <div data-role="navbar">
+      <ul>
+          <li><a href="#page1">DATOS GENERALES</a></li>
+          <li><a href="#Page2" data-transition="pop">ESTUDIOS</a></li>
+          <li><a href="#Page3">HABILIDADES EXTRAS</a></li>
+          <li><a href="#Page4">PASATIEMPOS</a></li>
+          <li><a href="#Page5">EXPERIENCIA LABORAL</a></li>
+      </ul>
+    </div>
+
+   <div data-role="main" class="ui-content">
+      <center><img src="img/dm.jpeg" width="100" height="100"></center>
+      <p align="center"><b>Primaria:</b> José Ma. Martínez Rodriguez<br>
+      <b>Secundaria:</b> Escuela Tecnica No.47<br>
+      <b>Preparatoria:</b> CBTis 46<br>
+      <b>Area:</b> Programación</p>
+    <table data-role="table" data-mode="columntoggle" class="ui-responsive" id="myTable" border="1px" with="100" cellpading="50" cellspacing="5" bgcolor="yellowgreen">
+      <thead>
+        <tr>
+         <th data-priority="1">Escuela</th>
+         <th data-priority="2">Año de ingreso</th>
+         <th data-priority="3">Dirección</th>
+        </tr>
+    </thead>
+    <tbody>
+     <tr>
+       <td>Primaria José Ma. Martínez Rodriguez</td>
+       <td>2006</td>
+       <td>Garcia Tellez</td>
+     </tr>
+     <tr>
+      <td> Secundaria Tecnica No.47</td>
+      <td>2012</td>
+      <td>Carretera al ingenio</td>
+    </tr>
+    <tr>
+      <td>CBTis 46</td>
+      <td>2015</td>
+      <td>Carretera Valles Tampico</td>
+    
+  </tbody>
+    </table>
+  </div>
+  
+
+  <div data-role="footer" data-theme="d">
+    <h2>Creado por DMOI </h2>
+    </div>
+</div>
+    <!-- //////////////////////////// -->
+<!-- page3 -->
+    <div data-role="page" id="Page3">
+         <!--Header-->
+         <div style="background-color: yellow" data-role="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
+            <a href="#page1" class="ui-btn-left ui-btn ui-icon-home ui-btn-icon-left" data-role="button" role="button">Home</a>
+            <h1 class="ui-title" role="heading" aria-level="1">BIENVENIDO A MI VITAE Digital</h1>
+            <a href="#" class="ui-btn-right ui-btn ui-icon-search ui-btn-icon-left" data-role="button" role="button">Search</a>
+            <div data-role="navbar" class="ui-navbar" role="navigation" style="background-color: red">
+                <ul class="ui-grid-d">
+                    <li class="ui-block-a"><a href="#Page1" style="background-color: pink" class="ui-link ui-btn">DATOS GENERALES</a></li>
+                    <li class="ui-block-b"><a href="#Page2" style="background-color: pink" class="ui-link ui-btn">ESTUDIOS</a></li>
+                    <li class="ui-block-c"><a href="#Page3" style="background-color: pink" class="ui-link ui-btn">HABILIDADES EXTRAS</a></li>
+                    <li class="ui-block-d"><a href="#Page4" style="background-color: pink" class="ui-link ui-btn">PASATIEMPOS</a></li>
+                    <li class="ui-block-e"><a href="#Page5" style="background-color: pink" class="ui-link ui-btn">EXPERIENCIA LABORAL</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- main -->
+        <div data-role="main" class="ui-content" >
+          <form>
+            <input data-type="search" id="filterCollapsibles" placeholder="Escribe lo que desea buscar" data-theme="a">
+          </form>
+          <div data-role="collapsiblesetd" data-filter="true" data-inset="true" id="myFilter" data-input="#filterCollapsibles" >
+            <div data-role="collapsible" data-filtertext="Habilidades">
+              <h3>Habilidades</h3>
+              <Ul data-role="listview" data-inset="true" >
+                <li>informatica </li>
+                <li>Bordado Tenek</li>
+                <li>Comer sin engordar.</li>
+              </Ul>
+              </div>
+              <div data-role="collapsible" data-filtertext="Ciudad" >
+                <h3>Ciudad"</h3>
+                <ul data-role="listview" data-inset="true" >
+                  <li><img src="img/Valles.jpg"  height="100px" width="100px">Cd.valles</li>
+                  <li><img src="img/monterrey.jpg"  height="100px" width="100px">Monterrey </li>
+                  <li><img src="img/Florencia.jpg"  height="100px" width="100px">Florencia</li>
+                </ul>
+              </div>
+              <div data-role="collapsible" data-filtertext="Comidas">
+                <h3>Danzas</h3>
+                <ul data-role="listview" data-inset="true">
+                  <li>Cumbia</li>
+                  <li>Salsa</li>
+                  <li>EL HUAPANGO</li>
+                </ul>
+              </div>
+              <div data-role="collapsible" data-filtertext="Meses" >
+                <h3>Flores</h3>
+                 <ul data-role="listview" data-inset="true"> 
+                  <li><img src="img/17.jpg"  height="100px" width="100px">Rosas</li>
+                  <li><img src="img/orquidea.png  "  height="100px" width="100px">Orquídea</li>
+                  <li><img src="img/Gardenia.png"  height="100px" width="100px">Gardenia</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+    
+      <div data-role="footer" data-theme="a">
+        <h2>Creado por DMOI</h2>
+        
+      </div>
+    </div>
+    <!-- /////////////// -->
+    <!-- pagina4 -->
+    <div data-role="page" id="Page4">
+        <div data-role="header" data-theme="b">
+         <!--Header-->
+        <div data-role="header" data-theme="b">
+    
+              <a href="#page1" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+              <h1>Pasatiempos</h1>
+              <a href="#" class="ui-btn ui-icon-search ui-btn-icon-left">Search</a>
+            </div>
+    
+               <!--navegador -->
+           <div data-role="navbar">
+            <ul>
+                <li><a href="#Page2">Escuela</a></li>
+                <li><a href="#Page3">Habilidades extra</a></li>
+                <li><a href="#Page4">Pasatiempos</a></li>
+                <li><a href="#Page5">Experiencia laboral</a></li>
+            </ul>
+          </div>    
+         <div data-role="main" class="ui-content" div style='text-align:center' >
+            <div data-role="collapsible" data-collapsed="true">
+            
+            </div>
+            <div data-role="collapsible">
+      
+                <h1>Expandir nivel 1</h1>
+                <ul>
+                <li>Jugar videojuego</li>
+                <li>Bordear</li>
+                <li>Cocinar</li>
+                <li>Bailar</li>
+                </ul>
+                <div data-role="collapsible">
+                </div>
+            </div> 
+
+        </div>
+            </div>
+        
+            <div data-role="footer" data-theme="d">
+                <div data-role="footer" data-theme="a">
+                    <h2>Creado por DMOI</h2>
+            </div>
+        </div>
+    </div>
+  <!-- ///////////////////////// -->
+  <!-- pagina5 -->
+  <div data-role="page" id="Page5">
+    <div data-role="header" data-theme="b">
+     <!--Header-->
+
+  		<a href="#page1" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+  		<h1>Experiencia laboral</h1>
+  		<a href="#" class="ui-btn ui-icon-search ui-btn-icon-left">Search</a>
+
+              <!--navegador -->
+       <div data-role="navbar">
+        <ul>
+            <li><a href="#page1">General</a></li>
+            <li><a href="#Page2">Escuela</a></li>
+            <li><a href="#Page3">Habilidades extra</a></li>
+            <li><a href="#Page4">Pasatiempos</a></li>
+            <li><a href="#Page5">Experiencia laboral</a></li>
+        </ul>
+      </div>
+	   </div>
+
+       
+     <!-- shif+alt +a comentario -->
+      <div data-role="main" class="ui-content" data-theme="b"  >
+
+        <form method="post" action="alta.php" >
+          <legend align="center" >Fomulario de datos</legend>
+         <div class="ui-field-contain">
+            <label for="fullname">Full name:</label>
+            <input type="text" name="fullname" id="fullname">
+        
+            <label for="bday">Date of Birth:</label>
+            <input type="date" name="bday" id="bday">
+        
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Your email..">
+          </div>
+  
+          <fieldset data-role="controlgroup" >
+            <legend>Género:</legend>
+              <label for="male">Masculino</label>
+              <input type="radio" name="gender" id="male" value="male">
+              <label for="female">Femenino</label>
+              <input type="radio" name="gender" id="female" value="female">
+              <label for="abst">Me abstengo</label>
+              <input type="radio" name="gender" id="abst" value="abst">
+          </fieldset>
+          <fieldset data-role="controlgroup">
+            <legend>Razon para contactarme</legend>
+              <label for="trabajo">trabajo</label>
+              <input type="checkbox" name="favcolor" id="trabajo" value="red">
+              <label for="Curiosidad">Curiosidad</label>
+              <input type="checkbox" name="favcolor" id="Curiosidad" value="green">
+              <label for="Conocer">Conocer</label>
+              <input type="checkbox" name="favcolor" id="Conocer" value="blue">
+          </fieldset>
+        
+          <fieldset class="ui-field-contain" data-theme="c">
+            <legend>Seleccione el trabajo </legend>
+            <select name="day" id="day" data-native-menu="false">
+               <optgroup label="Trabajo">
+                <option value="Ser">Servicio social</option>
+                <option value="Aten">Atencion a cliente</option>
+                <option value="Emple">Empleado</option>
+              </optgroup>
+              <optgroup label="Otros">
+                <option value="caj">Cajero</option>
+                <option value="inf">Informatica</option>
+              </optgroup>
+          </select>
+          <label for="info">Sugerencias o Aclaraciones</label>
+                <textarea name="addinfo" id="info"></textarea>
+          </fieldset>
+          <br>
+          <div style="text-align: center;">
+          <legend>Calidad del servicio</legend>
+          <label for="points">Puntos:</label>
+          <input type="range" name="points" id="points" value="50" min="0" max="100" data-show-value="true"> <br>
+          <input type="reset" value="Limpiar form">
+          <input type="submit" value="Enviar">
+          </div>
+                
+          </form>
+
+        <div style='text-align:center'>
+          <ul data-role="listview">
+            <li><a href="#">
+              <img src="img/dm.jpeg" s>
+              <h2>Experiencia</h2>
+              <p>Bienvenidos</p>
+              </a>
+            </li>
+          </ul>
+          <br>
+        </div>
+        <form class="ui-filterable">
+          <input id="Experiencia" data-type="search" data-theme="a" placeholder="Escribe el nombre que buscas..">
+        </form>
+        
+        <ul data-role="listview" data-filter="true" data-input="#Experiencia" data-autodividers="true" data-theme="a">
+          <li><a href="#"><img src="img/Se.png" alt="update"  width="80px" class="ui-li-icon" height="80"  > Servicio Social en TEC VALLES </a></li>
+          <li><a href="#"><img src="img/hogar.jpg" alt="update"  width="80px" height="80" >Empleado general</a></li>
+          <li><a href="#"><img src="img/ca.jpg" alt="update"  style="width: 60 px; height: 60px;">Cajero</a></li>
+          <li><a href="#"><img src="img/inf.jpg" alt="update"  width="80px" height="80" >Infomatica</a></li>
+        </ul>
+      </div>
+      
+      <div data-role="footer" data-theme="d">
+          <h2>Creado por DMOI</h2>
+        <center><a href="https://www.facebook.com/" ><img src="./img/Facebool.jpg" width="25" height="25" data-position="fixed"></a> <a href="https://twitter.com/ " >  <img src="./img/1.gif " width="25" height="25" data-position="fixed"></a><a href="https://www.instagram.com/?hl=es-la" ><img src="./img/2.gif" width="25" height="25" data-position="fixed"></a></center>
+      </div>
+    </div>
+     
+</body>
+</html>
